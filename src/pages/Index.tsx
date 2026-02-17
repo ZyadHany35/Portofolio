@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, Linkedin, Mail, MapPin, Phone, ExternalLink, Download, ChevronDown } from "lucide-react";
+import profileImg from "@/assets/ZiadHany2.png";
 import { useEffect, useState } from "react";
 
 const NAV_LINKS = [
@@ -92,12 +93,28 @@ const Index = () => {
 
       {/* Hero */}
       <header id="hero" className="pt-32 pb-20 px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground leading-tight">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-10">
+            <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg shrink-0">
+              <img
+                src={profileImg}
+                alt="Ziad Hany Saad"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="text-center sm:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground leading-tight">
+                Ziad Hany Saad
+              </h1>
+              <p className="mt-2 text-lg text-muted-foreground">Software Engineer · .NET · Generative AI</p>
+            </div>
+          </div>
+          <div className="text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
             Building Scalable Software with AI
-          </h1>
+          </h2>
           <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Software Engineer specializing in .NET development and Generative AI, turning complex problems into clean, practical solutions.
+            Turning complex problems into clean, practical solutions.
           </p>
           <div className="mt-8 flex items-center justify-center gap-4 flex-wrap">
             <Button size="lg" onClick={() => scrollTo("#contact")}>
@@ -121,6 +138,7 @@ const Index = () => {
           >
             <ChevronDown className="h-6 w-6 animate-bounce" />
           </button>
+          </div>
         </div>
       </header>
 
