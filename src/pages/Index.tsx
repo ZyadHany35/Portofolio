@@ -103,12 +103,12 @@ const Index = () => {
             <Button size="lg" onClick={() => scrollTo("#contact")}>
               Get in Touch
             </Button>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/ZyadHany35" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Button variant="outline" size="icon">
                 <Github className="h-5 w-5" />
               </Button>
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/ziadhany35" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Button variant="outline" size="icon">
                 <Linkedin className="h-5 w-5" />
               </Button>
@@ -203,8 +203,7 @@ const Index = () => {
               </ul>
             </CardContent>
             <CardFooter>
-              {/* TODO: Replace # with your actual GitHub repo URL */}
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/ZyadHany35" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="gap-2">
                   <ExternalLink className="h-4 w-4" />
                   View on GitHub
@@ -237,8 +236,7 @@ const Index = () => {
             <a href="mailto:zyadhanysaad@gmail.com">
               <Button size="lg">Get in Touch</Button>
             </a>
-            {/* TODO: Replace # with your actual CV download link */}
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="/Ziad_Hany_CV.pdf" download>
               <Button variant="outline" size="lg" className="gap-2">
                 <Download className="h-4 w-4" />
                 Download CV
@@ -251,9 +249,9 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border py-8 px-6">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <span>© {new Date().getFullYear()} Ziad Hany Saad. All rights reserved.</span>
+          <span>© Ziad Hany Saad. All rights reserved.</span>
           <a
-            href="https://github.com/"
+            href="https://github.com/ZyadHany35"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 hover:text-foreground transition-colors"
